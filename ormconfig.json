@@ -1,0 +1,15 @@
+{
+  "type" : "postgres",
+  "host" : "localhost",
+  "post" : 5432,
+  "username" : "postgres",
+  "password" : "postgres",
+  "database" : "novo-gobarber-v1",
+  "migrations" : [
+    "./src/database/migrations/*.ts"
+  ],
+  "cli" : {
+    "migrationsDir" : "./src/database/migrations"
+  }
+
+}
