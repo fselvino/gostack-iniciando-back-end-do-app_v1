@@ -5,6 +5,9 @@
   "username" : "postgres",
   "password" : "postgres",
   "database" : "novo-gobarber-v1",
+  "entities": [
+    "./src/models/*.ts"
+  ],
   "migrations" : [
     "./src/database/migrations/*.ts"
   ],
