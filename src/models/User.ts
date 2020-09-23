@@ -20,9 +20,6 @@ class Users {
   @Column()
   password: string;
 
-  @Column('time with time zone')
-  date: Date;
-
   @CreateDateColumn()
   created_at: Date;
 
