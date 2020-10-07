@@ -20,6 +20,7 @@ interface Request {
  * Sigle Responsability Principle
  * Dependency Inversion
  */
+
 class CreateAppointmentService {
   public async execute({ provider_id, date }: Request): Promise<Appointment> {
     const appointmentsRepository = getCustomRepository(AppointmentsRepository);
