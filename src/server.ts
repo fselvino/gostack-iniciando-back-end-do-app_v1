@@ -3,6 +3,7 @@ import 'reflect-metadata';
 import express from 'express';
 import cors from 'cors';
 import routes from './routes';
+import uploadConfig from './config/upload';
 
 import './database';
 
@@ -12,6 +13,7 @@ app.use(cors());
 
 // permite ender arquivos json vindo no body da aplicaçao
 app.use(express.json());
+app.use('/files', express.static(uploadConfig.directory));
 app.use(routes);
 
 app.listen(3333, () => {
